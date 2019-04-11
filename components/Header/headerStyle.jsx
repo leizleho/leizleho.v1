@@ -63,7 +63,7 @@ const headerStyle = theme => ({
       ...logoFont,
       minWidth: 'unset',
       lineHeight: '30px',
-      fontSize: '40px',
+      fontSize: '30px',
       borderRadius: '3px',
       textTransform: 'none',
       whiteSpace: 'nowrap',
@@ -79,10 +79,10 @@ const headerStyle = theme => ({
     marginTop: '0px'
   },
   primary: {
-    backgroundColor: primaryColor[0],
-    color: whiteColor,
+    backgroundColor: whiteColor,
+    color: primaryColor[0],
     boxShadow:
-      '0 4px 20px 0px rgba(' +
+      '0 4px 10px 0px rgba(' +
       hexToRgb(blackColor) +
       ', 0.14), 0 7px 12px -5px rgba(' +
       hexToRgb(primaryColor[0]) +

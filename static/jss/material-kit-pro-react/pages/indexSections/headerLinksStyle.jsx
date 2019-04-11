@@ -3,9 +3,9 @@ import {
   whiteColor,
   mlAuto,
   hexToRgb
-} from '../../static/jss/material-kit-pro-react.jsx';
+} from '../../../material-kit-pro-react.jsx';
 
-import tooltip from '../../static/jss/material-kit-pro-react/tooltipsStyle.jsx';
+import tooltip from '../../tooltipsStyle.jsx';
 
 const headerLinksStyle = theme => ({
   list: {
@@ -61,8 +61,8 @@ const headerLinksStyle = theme => ({
     color: 'inherit',
     position: 'relative',
     padding: '0.9375rem',
-    fontWeight: '500',
-    fontSize: '14px',
+    fontWeight: '400',
+    fontSize: '12px',
     textTransform: 'uppercase',
     lineHeight: '20px',
     textDecoration: 'none',

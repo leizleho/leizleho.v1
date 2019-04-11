@@ -123,20 +123,30 @@ class HeaderLinks extends React.Component {
     return (
       <List className={classes.list + ' ' + classes.mlAuto}>
         <ListItem className={classes.listItem}>
-          <Link href="/offers">
-            <a className={classes.navLink}>
-              <Redeem /> Offers
-            </a>
+          <Link href="#projects">
+            <a className={classes.navLink}>Projects</a>
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="/wishes">
-            <a className={classes.navLink}>
-              <Loyalty /> Wishes
-            </a>
+          <Link href="/skills">
+            <a className={classes.navLink}>Skills</a>
           </Link>
         </ListItem>
-        {navLinks}
+        <ListItem className={classes.listItem}>
+          <Link href="/about">
+            <a className={classes.navLink}>About</a>
+          </Link>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Link href="/skills">
+            <a className={classes.navLink}>Contact</a>
+          </Link>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Link href="/resume">
+            <a className={classes.navLink}>Resume</a>
+          </Link>
+        </ListItem>
       </List>
     );
   }
