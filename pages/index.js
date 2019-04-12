@@ -8,6 +8,7 @@ import HeaderLinks from '../components/Header/HeaderLinks.jsx';
 import SectionHeaders from './indexSections/SectionHeaders.jsx';
 import SectionProjects from './indexSections/SectionProjects.jsx';
 import SectionSkills from './indexSections/SectionSkills.jsx';
+import SectionContact from './indexSections/SectionContact.jsx';
 import indexPageStyle from '../static/jss/material-kit-pro-react/pages/indexPageStyle.jsx';
 import logo from '../static/img/lho_logo.png';
 class Index extends React.Component {
@@ -113,6 +114,7 @@ class Index extends React.Component {
           <SectionHeaders id="headers" />
           <SectionProjects id="projects" />
           <SectionSkills id="skills" />
+          <SectionContact id="contact" />
         </div>
         <nav id="cd-vertical-nav">
           <ul>
@@ -177,6 +179,27 @@ class Index extends React.Component {
               >
                 <span className="cd-dot" />
                 <span className="cd-label">Skills</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                data-number="4"
+                className=""
+                onClick={e => {
+                  var isMobile = navigator.userAgent.match(
+                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
+                  );
+                  if (isMobile) {
+                    // if we are on mobile device the scroll into view will be managed by the browser
+                  } else {
+                    e.preventDefault();
+                    this.smoothScroll('contact');
+                  }
+                }}
+              >
+                <span className="cd-dot" />
+                <span className="cd-label">Contact</span>
               </a>
             </li>
           </ul>
