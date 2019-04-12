@@ -1,13 +1,31 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
+import fetch from 'isomorphic-unfetch';
+import skillsData from '../db/skills.json';
 // core components
 import Header from '../components/Header/Header.jsx';
 import HeaderLinks from '../components/Header/HeaderLinks.jsx';
 import SectionHeaders from './indexSections/SectionHeaders.jsx';
 import SectionProjects from './indexSections/SectionProjects.jsx';
+import SectionSkills from './indexSections/SectionSkills.jsx';
 import indexPageStyle from '../static/jss/material-kit-pro-react/pages/indexPageStyle.jsx';
 import logo from '../static/img/lho_logo.png';
 class Index extends React.Component {
+  /*
+  static async getInitialProps() {
+    return { skillsData };
+  }
+
+  static async getInitialProps() {
+    const res = await fetch('/db/skills.json');
+    const data = await res.json();
+    console.log(`Show data fetched. Count: ${data.length}`);
+    return {
+      data
+    };
+  }
+  */
+
   componentDidMount() {
     var href = window.location.href.substring(
       window.location.href.lastIndexOf('#') + 1
@@ -16,6 +34,7 @@ class Index extends React.Component {
       document.getElementById(href).scrollIntoView();
     window.addEventListener('scroll', this.updateView);
     this.updateView();
+    //console.log('componentdidmount', skillsData);
   }
   componentDidUpdate() {
     var href = window.location.href.substring(
@@ -93,6 +112,7 @@ class Index extends React.Component {
         <div className={classes.main}>
           <SectionHeaders id="headers" />
           <SectionProjects id="projects" />
+          <SectionSkills id="skills" />
         </div>
         <nav id="cd-vertical-nav">
           <ul>
@@ -136,6 +156,27 @@ class Index extends React.Component {
               >
                 <span className="cd-dot" />
                 <span className="cd-label">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                data-number="3"
+                className=""
+                onClick={e => {
+                  var isMobile = navigator.userAgent.match(
+                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
+                  );
+                  if (isMobile) {
+                    // if we are on mobile device the scroll into view will be managed by the browser
+                  } else {
+                    e.preventDefault();
+                    this.smoothScroll('skills');
+                  }
+                }}
+              >
+                <span className="cd-dot" />
+                <span className="cd-label">Skills</span>
               </a>
             </li>
           </ul>

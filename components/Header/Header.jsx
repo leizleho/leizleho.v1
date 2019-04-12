@@ -132,7 +132,6 @@ Header.propTypes = {
     'dark'
   ]),
   links: PropTypes.node,
-  brand: PropTypes.string,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from

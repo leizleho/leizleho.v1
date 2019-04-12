@@ -128,22 +128,22 @@ class HeaderLinks extends React.Component {
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="/skills">
+          <Link href="/#skills">
             <a className={classes.navLink}>Skills</a>
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="/about">
+          <Link href="/#about">
             <a className={classes.navLink}>About</a>
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="/skills">
+          <Link href="/#skills">
             <a className={classes.navLink}>Contact</a>
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="/resume">
+          <Link href="/#resume">
             <a className={classes.navLink}>Resume</a>
           </Link>
         </ListItem>

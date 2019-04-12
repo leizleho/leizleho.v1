@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "icon": "/static/img/indexSection/react.png",
+    "title": "React"
+  },
+  {
+    "id": 2,
+    "icon": "/static/img/indexSection/redux.png",
+    "title": "Redux"
+  },
+  {
+    "id": 3,
+    "icon": "/static/img/indexSection/javascript.png",
+    "title": "Javascript"
+  },
+  {
+    "id": 4,
+    "icon": "/static/img/indexSection/nodejs.png",
+    "title": "Nodejs"
+  },
+  {
+    "id": 5,
+    "icon": "/static/img/indexSection/mongodb.png",
+    "title": "Mongodb"
+  },
+  {
+    "id": 6,
+    "icon": "/static/img/indexSection/css.png",
+    "title": "CSS"
+  },
+  {
+    "id": 7,
+    "icon": "/static/img/indexSection/html.png",
+    "title": "HTML"
+  },
+  {
+    "id": 8,
+    "icon": "/static/img/indexSection/mysql.png",
+    "title": "mySQL"
+  }
+]
