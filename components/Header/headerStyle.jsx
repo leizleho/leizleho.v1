@@ -22,6 +22,10 @@ const logoFont = {
 };
 
 const headerStyle = theme => ({
+  brand: {
+    width: '40px',
+    height: '37.8px'
+  },
   appBar: {
     display: 'flex',
     border: '0',

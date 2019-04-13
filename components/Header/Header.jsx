@@ -72,7 +72,9 @@ class Header extends React.Component {
         <Toolbar className={classes.container}>
           <Button className={classes.title}>
             <Link href="/about">
-              <a>{brand}</a>
+              <a>
+                <img src={brand} className={classes.brand} />
+              </a>
             </Link>
           </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>

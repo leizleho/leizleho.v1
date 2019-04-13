@@ -97,7 +97,8 @@ class Index extends React.Component {
   }
   render() {
     const { classes } = this.props;
-    const brandlogo = <img src={logo} />;
+    //const brandlogo = <img src={logo}/>;
+    const brandlogo = logo;
     return (
       <div>
         <Header
