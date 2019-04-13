@@ -23,6 +23,11 @@ class MyDocument extends Document {
               pageContext ? pageContext.theme.palette.primary.main : null
             }
           />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/static/favicon.ico"
+          />
           <link rel="stylesheet" href="static/style.css" />
           <link
             rel="stylesheet"
