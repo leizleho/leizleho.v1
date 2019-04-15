@@ -6,22 +6,14 @@ import Icon from '@material-ui/core/Icon';
 // @material-ui/icons
 import Build from '@material-ui/icons/Build';
 import Subject from '@material-ui/icons/Subject';
-import FormatPaint from '@material-ui/icons/FormatPaint';
-import Code from '@material-ui/icons/Code';
-import Dashboard from '@material-ui/icons/Dashboard';
-import Timeline from '@material-ui/icons/Timeline';
-import Group from '@material-ui/icons/Group';
+
 // core components
 import GridContainer from '../../components/Grid/GridContainer.jsx';
 import GridItem from '../../components/Grid/GridItem.jsx';
-import NavPills from '../../components/NavPills/NavPills.jsx';
 import Card from '../../components/Card/Card.jsx';
 import CardBody from '../../components/Card/CardBody.jsx';
 import CardHeader from '../../components/Card/CardHeader.jsx';
 import Button from '../../components/CustomButtons/Button.jsx';
-import Muted from '../../components/Typography/Muted.jsx';
-import InfoArea from '../../components/InfoArea/InfoArea.jsx';
-import Badge from '../../components/Badge/Badge.jsx';
 
 import projectsStyle from '../../static/jss/material-kit-pro-react/pages/indexSections/projectsStyle.jsx';
 
@@ -31,7 +23,6 @@ import cardProject1 from '../../static/img/card-project1.jpg';
 import cardProject2 from '../../static/img/card-project2.jpg';
 import cardProject3 from '../../static/img/card-project3.jpg';
 import cardProject4 from '../../static/img/card-project4.jpg';
-import cardProject5 from '../../static/img/card-project5.jpg';
 import cardProject6 from '../../static/img/card-project6.jpg';
 
 function SectionProjects({ ...props }) {

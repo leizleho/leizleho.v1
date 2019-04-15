@@ -1,7 +1,6 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
-import fetch from 'isomorphic-unfetch';
-import skillsData from '../db/skills.json';
+
 // core components
 import Header from '../components/Header/Header.jsx';
 import HeaderLinks from '../components/Header/HeaderLinks.jsx';
