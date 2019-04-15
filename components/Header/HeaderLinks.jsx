@@ -138,7 +138,7 @@ class HeaderLinks extends React.Component {
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="/#skills">
+          <Link href="/#contact">
             <a className={classes.navLink}>Contact</a>
           </Link>
         </ListItem>

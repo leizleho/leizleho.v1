@@ -12,21 +12,6 @@ import SectionContact from './indexSections/SectionContact.jsx';
 import indexPageStyle from '../static/jss/material-kit-pro-react/pages/indexPageStyle.jsx';
 import logo from '../static/img/lho_logo.png';
 class Index extends React.Component {
-  /*
-  static async getInitialProps() {
-    return { skillsData };
-  }
-
-  static async getInitialProps() {
-    const res = await fetch('/db/skills.json');
-    const data = await res.json();
-    console.log(`Show data fetched. Count: ${data.length}`);
-    return {
-      data
-    };
-  }
-  */
-
   componentDidMount() {
     var href = window.location.href.substring(
       window.location.href.lastIndexOf('#') + 1
